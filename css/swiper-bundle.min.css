@@ -18,39 +18,7 @@
 }
 
 :root {
-    --swiper-theme-color: #fff;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: var(--works-bg-color);
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    --swiper-theme-color: #007aff
 }
 
 .swiper {
@@ -60,7 +28,7 @@
     overflow: hidden;
     list-style: none;
     padding: 0;
-    /* z-index: 1 */
+    z-index: 1
 }
 
 .swiper-vertical>.swiper-wrapper {
@@ -71,7 +39,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    /* z-index: 1; */
+    z-index: 1;
     display: flex;
     transition-property: transform;
     box-sizing: content-box
@@ -95,7 +63,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    transition-property: transform
+    transition-property: transform;
 }
 
 .swiper-slide-invisible-blank {
@@ -244,14 +212,14 @@
 }
 
 :root {
-    --swiper-navigation-size: 25px
+    --swiper-navigation-size: 44px
 }
 
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
     top: 50%;
-    width: calc(var(--swiper-navigation-size)/ 25 * 27);
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
     height: var(--swiper-navigation-size);
     margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
     z-index: 10;
@@ -318,8 +286,6 @@
 }
 
 .swiper-pagination {
-    display: flex;
-    justify-content: center;
     position: absolute;
     text-align: center;
     transition: .3s opacity;
@@ -340,7 +306,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 20px;
+    bottom: 10px;
     left: 0;
     width: 100%
 }
