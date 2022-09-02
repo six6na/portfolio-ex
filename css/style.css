@@ -1,0 +1,49 @@
+:root {
+    --pc-header-height: 80px;
+    --file-bright-color: #F9F5EB;
+    --file-dark-color: #EAE3D2;
+    --about-bg-color: #E2BF34;
+    --works-bg-color: #89BECE;
+    --contact-bg-color: #A06D99;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #000; 
+    text-decoration: none;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+  
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1920px;
+}
+
+.pg-pips {
+    display: none;
+}

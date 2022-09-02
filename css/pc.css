@@ -1,0 +1,332 @@
+@import url(style.css);
+@import url(swiper-bundle.min.css);
+/* @import url(pageable.min.css); */
+
+header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    /* padding: 20px; */
+    background: var(--file-dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+header a {
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    /* width: 100px; */
+}
+
+header #homeBtn {
+    background-color: var(--file-bright-color);
+    border-top-right-radius: 20px;
+    width: 20%;
+}
+
+header nav a:nth-child(1) {
+    background-color: var(--about-bg-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 60%;
+}
+
+header nav a:nth-child(2) {
+    background-color: var(--works-bg-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 60%;
+}
+
+header nav a:nth-child(3) {
+    background-color: var(--contact-bg-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 60%;
+}
+
+#page-1 {
+    background: var(--file-bright-color);
+}
+
+#page-1 #front-page {
+    position: relative;
+}
+
+#page-1 #front-page h2 {
+    position: absolute;
+    left: 30px;
+    text-align: left;
+    top: 100px;
+}
+
+#page-1 #front-page h1 {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 128px;
+}
+
+#page-1 #front-page h1 span {
+    font-size: 24px;
+}
+
+#page-2 {
+    background: var(--about-bg-color);
+}
+
+#page-2 #profile {
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#page-2 #profile .profile-img {
+    width: 350px;
+    height: 460px;
+    background: #fff;
+}
+
+#page-2 #profile .contents {
+    width: 900px;
+    height: 460px;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-2 #profile .intro {
+    height: 120px;
+    background: #888;
+}
+
+#page-2 #profile .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 220px;
+}
+
+#page-2 #profile .info .me {
+    background: #777;
+    width: calc(100% / 3);
+}
+
+#page-2 #profile .info .edu {
+    background: #666;
+    width: calc(100% / 3);
+}
+
+#page-2 #profile .info .certification {
+    background: #555;
+    width: calc(100% / 3);
+}
+
+#page-2 #profile .skills {
+    background: #444;
+    width: 100%;
+    height: 120px;
+}
+
+#page-3 {
+    background: var(--works-bg-color);
+}
+
+.mu-img img {
+    width: 595px;
+    height: 350px;
+}
+
+.s-wrap {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-info img{
+    width: 200px;
+    height: 65px;
+}
+
+.side-info h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #fff;
+}
+
+.side-info h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.side-info p {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    text-align: left;
+    color: #fff;
+}
+
+.infoBtns {
+    display: flex;
+    /* outline: 1px solid blue; */
+    align-items: flex-start;
+}
+
+.infoBtns > a:first-child {
+    margin-right: 10px;
+}
+
+.infoBtns a {
+    font-size: 16px;
+    font-weight: 500;
+    background: #fff;
+    padding: 10px 30px;
+}
+
+#page-4 {
+    background: var(--contact-bg-color);
+    height: calc(100vh - 100px);
+}
+
+.r-cont {
+    background: var(--file-bright-color);
+    width: 600px;
+    height: 400px;
+}
+
+.mail {
+    height: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+}
+
+.mail div input, .mail div textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--contact-bg-color);
+    background: none;
+}
+
+.name input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.email input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.message textarea {
+    width: 100%;
+    height: 125px;
+}
+
+input::placeholder {
+    color: #A06D99;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+textarea::placeholder {
+    color: #A06D99;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.send {
+    border: none;
+    background: #A06D99;
+    color: #fff;
+    font-weight: medium;
+    font-size: 12px;
+    padding: 8px 30px;
+    border-radius: 20px;
+    position: absolute;
+    right: 50px;
+    margin-top: 20px;
+}
+
+.send:hover {
+    border: 1px solid #A06D99;
+    background: var(--file-light-color);
+    color: #A06D99;
+}
+
+.contactWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer {
+    height: 100px;
+}
+
+.l-cont {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+}
+
+.l-cont h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    width: 110px;
+}
+
+.l-cont p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 120px;
+}
+
+.l-cont a {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.l-cont a:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--file-dark-color);
+}
